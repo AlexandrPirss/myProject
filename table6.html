@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Title</title>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+		<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
+		<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+		<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css" rel="stylesheet">
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/backbone.js/1.3.3/backbone-min.js"></script>
+		<link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.1/animate.min.css" rel="stylesheet">
+
+
+
+		<link href='https://fonts.googleapis.com/css?family=Headland+One' rel='stylesheet' type='text/css'>
+
+		<script src="libs/moment.min.js"></script>
+		<script src="libs/jquery.nanoscroller.min.js"></script>
+		<link href="css/mystyle.css" rel="stylesheet">
+	</head>
+
+	<body>
+		<div class="row">
+
+				<div class="col-md-12">
+				<div id="Table1">
+							<div class="div-one col0" >
+								<p class="paragraf-one">STATUS</p>
+							</div>
+							<div class="div-one col1" >
+								<p class="paragraf-one">AGENT NAME</p>
+							</div>
+							<div class="div-one col2">
+								<p class="paragraf-one">ELAPSED TIME</p>
+							</div>
+							<div class="div-one col3">
+								<p class="paragraf-one">AUX</p>
+							</div>
+
+					<div>
+						<div>
+							<!--Template Row start -->
+							<script id="row-template" type="text/template" data-id="template">
+								<td class="col0 rel">
+									<div class="icon rel" >
+										<div class="<%=icon%>"  data-id="icon"></div>
+									</div>
+								</td>
+								<td class="col1">
+									<span data-id="name"><%=name%></span>
+								</td>
+								<td  class="col2">
+									<span data-id="time,time_color" class="<%=time_color%>"><%=time%></span>
+								</td>
+								<td class="col3">
+									<div class="aux rel">
+										<div data-id="aux,aux_color" ><%=aux%></div>
+									</div>
+								</td>
+
+							</script>
+							<!--Template Row end -->
+
+
+							<table class="table table-responsive">
+								<tbody>
+
+								</tbody>
+
+
+							</table>
+						</div>
+					</div>
+
+					<link href="css/Table1.css" rel="stylesheet">
+					<script  src="apps/RowModel.js"></script>
+					<script  src="apps/RowView1.js"></script>
+					<script  src="apps/RowView2.js"></script>
+					<script  src="apps/BackboneTable.js"></script>
+					<script  src="apps/Table1.js"></script>
+
+				</div>
+				</div>
+
+
+		</div>
+	</body>
+</html>
